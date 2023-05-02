@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/02a288cf3d.js" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body { background-color: antiquewhite;}
+    .inner-outer{ display: flex; justify-content: center; margin: 200px auto;}
+    .preview { background-color: whitesmoke; width: 300px; height: 400px; border-radius: 0 8px 8px 0;}
+    .perfume-img { width: 300px; height: 400px; border-radius: 8px 0 0 8px;} 
+    .title { color: hsl(228, 12%, 48%); font-family: 'Montserrat'; margin-left: 20px; letter-spacing: 3px; font-size: 13px;}
+    .perfume-name { font-family: Montserrat; font-weight: 700;}
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+
+    .btn {
+      -webkit-border-radius: 5;
+      -moz-border-radius: 5;
+      border-radius: 8px;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 14px;
+      background: hsl(158, 36%, 37%);
+      padding: 10px 40px 10px 40px;
+      width: 80%;
+      margin: 95px 30px;
+    }
+    .btn:hover { background: hsl(157, 44%, 27%);}
+    #cart{ margin-right: 5px;}
+    .g { display: block; font-family: 'Fraunces'; margin-left: 20px;}
+    .ee{ font-family: 'Fraunces'; margin-left: 20px;}
+    .dp { display: block; font-family: 'Fraunces'; margin-left: 20px;}
+    .s1 { display: block;}
+    .s3 { display: block;}
+    p { font-size: 14px; text-align: left; color: hsl(228, 12%, 48%); font-family: 'Montserrat'; margin-left: 20px;}
+
+    /* .price{ margin-top: 30px;} */
+    .newp{ color: hsl(158, 36%, 37%); margin-top: 30px; font-family: 'Fraunces'; font-size: xx-large;}
+    .oldp{ font-family: 'Montserrat'; text-decoration: line-through; margin: -60px 170px;}
+
+     /* Smartphones (portrait and landscape) ----------- */
+     @media screen and (max-width : 600px) {
+      .inner-outer{ flex-direction: column;}
+      .perfume-img{ border-radius: 8px 8px 0 0; width: 80%;} 
+      .preview{ border-radius: 0 0 8px 8px; width: 80%; margin-top: -5px;}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="inner-outer">
+
+  <div>
+    <img class="perfume-img" src="images/image-product-desktop.jpg" alt="perfume">
+  </div>
+  <div class="preview">
+  
+  <h3 class="title">PERFUME</h3> 
+
+  <h2 class="perfume-name"><span class="g">Gabrielle</span> <span class="ee">Essence Eau</span> <span class="dp">De Parfum</span></h2>
+
+  <p><span class="s1">A floral, solar and voluptuous</span> 
+    <span class="s2">interpretation composed by </span>
+    <span class="s3">Olivier Polge, Perfumer-Creator</span>
+    <span>for the House of CHANEL.</span></p> 
+
+  <p class="newp">$149.99</p>
+  <p class="oldp">$169.99</p>
+
+  <button class="btn btn-light" type="button"><i id="cart" class="fa-solid fa-cart-shopping fa-fade"></i>Add to Cart</button>
+</div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ammar</a>.
+  </div> -->
+
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
